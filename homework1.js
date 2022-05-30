@@ -33,3 +33,14 @@ console.log('первое число меньше или равно', firstNorma
 console.log('числа равны', firstNormalized === secondNormalized);
 console.log('числа не равны', firstNormalized !== secondNormalized);
 
+//рандомное нечетное число между l и m
+
+let l = 100;
+let m = -5;
+
+let max = Math.max(l, m);
+let min = Math.min(l, m);
+
+let range = min + Math.floor(Math.random() * (max - min));
+let res = range + (range % 2) + 1;
+console.log(res);
